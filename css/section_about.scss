@@ -1,136 +1,43 @@
+@import "variables";
+@import "windows.scss";
 .section_about {
     position: relative;
     margin: 0 auto;
     height: 800px;
-    width: 1180px;
-    padding-left: 160px;
-    padding-right: 160px;
+    width: 1500px - ($padding-left-right*2);
+    padding-left: $padding-left-right;
+    padding-right: $padding-left-right;
     background-color: rgb(236, 236, 236);
 }
 
-.qwerty {
+/*  Section About top border */
+.border2 {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../images/Path2.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     height: 19px;
     width: 1500px;
 }
 
-.about_h2 {
+.top-bigHeader {
     position: relative;
-    top: 50px;
+    top: 40px;
     font-size: 40px;
     color: rgb(225, 82, 75);
     text-align: center;
     text-transform: uppercase;
 }
 
-.about_p {
+.top-littleHeader {
     position: relative;
-    top: 60px;
+    top: 40px;
     margin: 0 auto;
     font-size: 13px;
     color: rgb(119, 119, 119);
     text-align: center;
 }
 
-.round_group {
-    text-align: left;
-    position: relative;
-    left: 3px;
-}
-.round {
-    display: inline-block;
-    position: relative;
-    margin-left: 7px;
-    top: 15px;
-    background-color: rgb(237, 237, 237);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    text-align: left;
-}
-
-.ellipse { 
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    height: 7px;
-    width: 12px;
-    border-radius: 10px;
-    background-color: rgb(237, 237, 237);
-}
-
-$win_height: 360px;
-$win_width: 570px;
-
-.windows {
-    top: 80px;
-    display: block;
-    height: $win_height;
-    //width: $win_width + (($win_width - 200px)*2);
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.window, .window_min, .window_min2 {
-    position: relative;
-    display: inline-block;
-    height: $win_height;
-    width: $win_width;
-    background-color: rgb(192, 200, 201);
-    border-radius: 5px;
-}
-
-.window {
-    position: absolute;
-    left: 300px;
-    z-index: 1;
-}
-
-.window_min, .window_min2 {
-    background-color: rgb(174, 185, 187);
-    height: $win_height - 100px;
-    width: $win_width - 200px;
-}
-
-.window_min {
-    position: absolute;
-    left:0;
-    top: 60px;
-}
-
-.window_min2 {
-    position: absolute;
-    right:0;
-    top: 60px;
-}
-
-$win_img_height: 310px;
-$win_img_width: 560px;
-
-.window_image, .window_image_min {
-    position: relative;
-    top: 33px;
-    height: $win_img_height;
-    width: $win_img_width;
-    background-color: rgb(122, 141, 141);
-    border-radius: 5px;
-    margin: 0 auto;
-}
-
-.window_image_min {
-    background-color: rgb(0, 186, 177);
-    height: $win_img_height - 100px;
-    width: $win_img_width - 200px;
-}
-
-.many-text_container {
+.about-container {
     position: relative;
     top: 120px;
 }
