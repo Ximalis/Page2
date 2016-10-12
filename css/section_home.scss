@@ -6,20 +6,21 @@
     height: 500px;
 }
 
-.vestibulum {
+.big-span {
     display: table;
     position: relative;
     margin: 0 auto;
     top: 150px;
-    border-radius: 7px;
-    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
     background-color: rgb(226, 83, 75);
     text-transform: uppercase;
+    font-family: "OpenSans-ExtraBold", serif;
     font-size: 50px;
     color: rgb(255, 255, 255);
 }
 
-.vest_text {
+.little-span {
     width: 470px;
     position: relative;
     top: 160px;
@@ -37,22 +38,34 @@
 .prev_button, .next_button {
     position: absolute;
     top: 200px;
+    cursor: pointer;
     display: table;
     padding: 0px 10px 8px 10px;
+    outline: none;
     vertical-align: middle;
     text-align: center;
-    background-color: rgb(226, 83, 75);
-    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 3px rgb(220, 83, 75);
+    background-color: rgb(250, 83, 75);
+    border-radius: 5px;
     font-size: 40px;
     color: rgb(255, 255, 255);
 }
 
+//.prev_button:hover, .next_button:hover {background-color: rgba(226, 83, 75, 0.95);}
+
+.prev_button:active, .next_button:active {
+    background-color: rgb(226, 83, 75);
+    box-shadow: 0 2px #666;
+    transform: translateY(3px);
+}
+
 .prev_button {
-    left: 0px;
+    left: 0;
 }
 
 .next_button {
-    right: 0px;
+    right: 0;
 }
 
 

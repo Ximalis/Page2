@@ -1,3 +1,6 @@
+$inner-intro-left-padding: 30px;
+$inner-intro-top-padding: 15px;
+
 .section_intro {
     background-color: rgb(243, 243, 243);
     width: 1500px;
@@ -7,36 +10,15 @@
 
 .section_inner_intro {
     position: relative;
-    top: 20px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    top: 50px;
+    margin: inherit;
+    padding-left: $inner-intro-left-padding;
     padding-top: 25px;
-    padding-bottom: 0px;
     border-radius: 5px;
     background-color: rgb(236, 236, 236);
-    width: 1110px;
-    height: 75px;
+    width: 1170px - $inner-intro-left-padding;
+    height: 100px - $inner-intro-top-padding;
 }
-
-.intro_button {
-    position: absolute;
-    right: 30px;
-    top: 28px;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 1.2;
-    color: rgb(255, 255, 255);
-    padding: 10px 30px 10px 30px; /* Поля вокруг текста */
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 3px rgb(220, 83, 75);
-    background-color: rgb(250, 83, 75);
-   }
 
 .intro_button:hover {background-color: rgba(226, 83, 75, 0.95);}
 
@@ -48,14 +30,60 @@
 
 .intro_h {
     position: relative;
-  font-size: 30px;
-  color: rgb(127, 140, 140);
-  text-align: left;
+    vertical-align: middle;
+    font-family: "OpenSans-Semibold", serif;
+    font-size: 30px;
+    color: rgb(127, 140, 140);
 }
 
 .intro_text {
-  font-size: 13px;
-  color: rgb(119, 119, 119);
-  text-align: left;
+    position: relative;
+    vertical-align: middle;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+}
+
+.slider-trigger-container{
+    position: relative;
+    top: 20px;
+    display: table;
+    margin: 0 auto;
+}
+
+.slider-trigger {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    background-color: rgb(176, 184, 185);
+    width: 60px;
+    height: 5px;
+}
+
+.slider-trigger:hover {
+    background-color: rgb(242, 77, 78);
+}
+
+.slider-trigger:active {
+    background-color: rgb(242, 77, 78);
+}
+
+.intro_button {
+    position: absolute;
+    right: 30px;
+    top: 28px;
+    text-transform: uppercase;
+    font-family: OpenSans-Semibold, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px rgb(220, 83, 75);
+    background-color: rgb(250, 83, 75);
 }
 

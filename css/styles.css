@@ -92,10 +92,7 @@ ul.hr li {
 
 ul.hr a {
   border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 7px;
+  padding: 10px 15px 7px;
   letter-spacing: normal;
   text-transform: uppercase;
   font-size: 13px;
@@ -125,6 +122,7 @@ header {
   padding-right: 160px;
 }
 
+/*Bottom header image styles*/
 #header-border {
   position: absolute;
   left: 0;
@@ -141,20 +139,21 @@ header {
   height: 500px;
 }
 
-.vestibulum {
+.big-span {
   display: table;
   position: relative;
   margin: 0 auto;
   top: 150px;
-  border-radius: 7px;
-  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
   background-color: #e2534b;
   text-transform: uppercase;
+  font-family: "OpenSans-ExtraBold", serif;
   font-size: 50px;
   color: white;
 }
 
-.vest_text {
+.little-span {
   width: 470px;
   position: relative;
   top: 160px;
@@ -172,22 +171,32 @@ header {
 .prev_button, .next_button {
   position: absolute;
   top: 200px;
+  cursor: pointer;
   display: table;
   padding: 0px 10px 8px 10px;
+  outline: none;
   vertical-align: middle;
   text-align: center;
-  background-color: #e2534b;
-  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 3px #dc534b;
+  background-color: #fa534b;
+  border-radius: 5px;
   font-size: 40px;
   color: white;
 }
 
+.prev_button:active, .next_button:active {
+  background-color: #e2534b;
+  box-shadow: 0 2px #666;
+  transform: translateY(3px);
+}
+
 .prev_button {
-  left: 0px;
+  left: 0;
 }
 
 .next_button {
-  right: 0px;
+  right: 0;
 }
 
 .section_intro {
@@ -199,36 +208,14 @@ header {
 
 .section_inner_intro {
   position: relative;
-  top: 20px;
-  margin: 0 auto;
+  top: 50px;
+  margin: inherit;
   padding-left: 30px;
-  padding-right: 30px;
   padding-top: 25px;
-  padding-bottom: 0px;
   border-radius: 5px;
   background-color: #ececec;
-  width: 1110px;
-  height: 75px;
-}
-
-.intro_button {
-  position: absolute;
-  right: 30px;
-  top: 28px;
-  text-transform: uppercase;
-  font-size: 20px;
-  line-height: 1.2;
-  color: white;
-  padding: 10px 30px 10px 30px;
-  /* Поля вокруг текста */
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 3px #dc534b;
-  background-color: #fa534b;
+  width: 1140px;
+  height: 85px;
 }
 
 .intro_button:hover {
@@ -243,15 +230,61 @@ header {
 
 .intro_h {
   position: relative;
+  vertical-align: middle;
+  font-family: "OpenSans-Semibold", serif;
   font-size: 30px;
   color: #7f8c8c;
-  text-align: left;
 }
 
 .intro_text {
+  position: relative;
+  vertical-align: middle;
   font-size: 13px;
   color: #777777;
-  text-align: left;
+}
+
+.slider-trigger-container {
+  position: relative;
+  top: 20px;
+  display: table;
+  margin: 0 auto;
+}
+
+.slider-trigger {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #b0b8b9;
+  width: 60px;
+  height: 5px;
+}
+
+.slider-trigger:hover {
+  background-color: #f24d4e;
+}
+
+.slider-trigger:active {
+  background-color: #f24d4e;
+}
+
+.intro_button {
+  position: absolute;
+  right: 30px;
+  top: 28px;
+  text-transform: uppercase;
+  font-family: OpenSans-Semibold, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #dc534b;
+  background-color: #fa534b;
 }
 
 .section_services {
