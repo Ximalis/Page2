@@ -1,0 +1,23 @@
+@import "reset.scss";
+@import "site_name.scss";
+@import "header.scss";
+@import "section_home.scss";
+@import "section_intro.scss";
+@import "section_services.scss";
+@import "section_about.scss";
+@import "section_clients.scss";
+@import "footer.scss";
+
+/** {
+font-family: 'OpenSans';
+    src: url('fonts/2211.eot');
+    src: url('fonts/2211.eot') format('embedded-opentype'),
+         url('fonts/2211.woff2') format('woff2'),
+         url('fonts/2211.woff') format('woff'),
+         url('fonts/2211.ttf') format('truetype'),
+         url('fonts/2211.svg#OpenSans') format('svg');
+         font-family: 'OpenSans', sans-serif;
+}
+*/
+body {
+}

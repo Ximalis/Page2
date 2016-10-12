@@ -1,0 +1,93 @@
+.section_clients {
+    height: 225px;
+    width: 1180px;
+    position: relative;
+    background-color: rgb(236, 236, 236);
+    margin: 0 auto;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.el_line {
+    position: relative;
+    top: 5px;
+    left: 20px;
+    display: inline-block;
+}
+
+.ellipse_client {
+    display: inline-block;
+    vertical-align: center;
+    background-color: rgb(225, 226, 226);
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.why {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.line {
+    display: inline-block;
+    vertical-align: center;
+    background-color: rgb(225, 226, 226);
+    position: absolute;
+    top: 3px;
+    width: 880px;
+    height: 1px;
+}
+
+.jquery_rectangle {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+    width: 170px;
+    height: 90px;
+}
+
+.clients_jquery {
+    position: relative;
+    top: 65px;
+    text-align: justify;
+    letter-spacing: 30px;
+}
+
+.button_container {
+    position: absolute;
+    top: 0;
+    right: 160px;
+    display: inline-block;
+    letter-spacing: 19px;
+}
+
+.client_button, .client_button2 {
+    width: 37px;
+    height: 37px;
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    vertical-align: bottom;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 3px rgb(127, 140, 140);
+    background-color: rgb(150, 163, 163);
+}
+
+.client_button2 {
+    
+}
+
+.client_button:hover {background-color: rgba(226, 83, 75, 0.95);box-shadow: 0 3px rgb(226, 83, 75);}
+
+.client_button:active {
+    background-color: rgb(226, 83, 75);
+    box-shadow: 0 2px rgb(226, 83, 75);
+    transform: translateY(3px);
+}

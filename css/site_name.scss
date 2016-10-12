@@ -1,0 +1,24 @@
+.site_name, .site_name2 {
+    position: relative;
+    display: block;
+    top: 25px;
+    width: 200px;
+}
+
+$font-color: rgb(255, 255, 255);
+
+.modus {
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: $font-color;
+}
+
+.versus {
+    margin-left: 3px;
+    display: inline;
+    vertical-align: bottom;
+    font-size: 25px;
+    color: $font-color;
+}

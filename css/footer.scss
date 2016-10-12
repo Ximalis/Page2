@@ -1,0 +1,206 @@
+footer {
+  background-color: rgb(118, 199, 192);
+  position: relative;
+  margin: 0 auto;
+  width: 1170px;
+  height: 350px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.footer_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/footer_border.png");
+  background-position: center center;
+  width: 1500px;
+  height: 19px;
+}
+
+.first_block {
+  position: relative;
+  display: table-cell;
+}
+
+.footer_span {
+  position: relative;
+  top: 50px;
+  display: block;
+  width: 370px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  line-height: 1.8;
+  text-align: left;
+}
+
+table.footer_table {
+    position: relative;
+    top: 70px;
+    width: 250px; /* Ширина таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+}
+
+table.footer_table td {
+    font-weight: normal;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    text-align: left;
+}
+
+table.footer_table th {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-align: left;
+  vertical-align: center;
+}
+
+.second_block {
+  position: relative;
+  display: table-cell;
+}
+
+.com, .com2 {
+  position: relative;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.502);
+  font-weight: bold;
+  text-align: left;
+}
+
+.com2 {
+  left: 100px;
+}
+
+.com_container {
+  display: inline-block;
+  position: relative;
+  left: 30px;
+  top: 25px;
+}
+
+.com_container ul{
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.com_container li{
+  font-size: 15px;
+  color: white;
+  list-style: none;
+}
+
+.a_footer {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  line-height: 1.8;
+  text-align: left;
+  text-decoration: none;
+}
+
+.third_block {
+  position: absolute;
+  right: 150px;
+  top: 50px;
+  display: table-cell; 
+}
+
+.third_p {
+  position: relative;
+  left: 18px;
+  color: white;
+}
+
+br {
+  font-size: 55px;
+}
+
+i, b {
+  font-size: 20px;
+}
+
+table.footer_table2 {
+    width: 350px; /* Ширина таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 15px; /* Расстояние между ячейками */
+   }
+
+table.footer_table2 td {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.2;
+}
+
+table.footer_table2 th {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+
+ul {
+  display: table-cell;
+  position: relative;
+}
+
+.footer_bottom {
+  padding-left: 165px;
+  padding-right: 165px;
+  height: 50px;
+  width: 1170px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.102);
+}
+
+.foo_modus {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 165px;
+  top: 20px;
+}
+
+.facebook {
+  display: inline-block;
+  background-image: url("../images/facebook.png");
+  width: 10px;
+  height: 22px;
+}
+
+.googleplus {
+  display: inline-block;
+  background-image: url("../images/googleplus.png");
+  width: 22px;
+  height: 23px;
+}
+
+.tweeter {
+  display: inline-block;
+  background-image: url("../images/twetter.png");
+  width: 17px;
+  height: 22px;
+}
+
+.rss {
+  display: inline-block;
+  background-image: url("../images/rss.png");
+  width: 22px;
+  height: 21px;
+}
+
+.social_icons {
+  letter-spacing: 25px;
+  position: absolute;
+  right: 165px;
+  top: 12px;
+}
