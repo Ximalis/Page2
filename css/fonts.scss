@@ -64,3 +64,14 @@
   url('../fonts/OpenSans/OpenSans-semibold/OpenSans-Semibold.svg##OpenSans-Semibold') format('svg');
 }
 
+@font-face {
+  font-family: OpenSans-SemiboldItalic;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/OpenSans/OpenSans-semibolditalic/OpenSans-SemiboldItalic.eot');
+  src: url('../fonts/OpenSans/OpenSans-semibolditalic/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans/OpenSans-semibolditalic/OpenSans-SemiboldItalic.woff') format('woff'),
+  url('../fonts/OpenSans/OpenSans-semibolditalic/OpenSans-SemiboldItalic.ttf') format('truetype'),
+  url('../fonts/OpenSans/OpenSans-semibolditalic/OpenSans-SemiboldItalic.svg##OpenSans-SemiboldItalic') format('svg');
+}
+

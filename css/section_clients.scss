@@ -1,21 +1,31 @@
 .section_clients {
+    position: relative;
     height: 225px;
     width: 1180px;
-    position: relative;
     background-color: rgb(236, 236, 236);
     margin: 0 auto;
     padding-left: 160px;
     padding-right: 160px;
 }
 
-.el_line {
+.left-header2 {
+    display: inline-block;
     position: relative;
-    top: 5px;
-    left: 20px;
+    top: 10px;
+    font-size: 16px;
+    color: rgb(127, 140, 140);
+    font-family: "OpenSans-ExtraBold", sans-serif;
+    text-align: left;
+}
+
+.line-container {
+    position: relative;
+    top: 9px;
+    left: 15px;
     display: inline-block;
 }
 
-.ellipse_client {
+.line-begin {
     display: inline-block;
     vertical-align: center;
     background-color: rgb(225, 226, 226);
@@ -57,7 +67,7 @@
     letter-spacing: 30px;
 }
 
-.button_container {
+.button-container {
     position: absolute;
     top: 0;
     right: 160px;
@@ -65,23 +75,22 @@
     letter-spacing: 19px;
 }
 
-.client_button, .client_button2 {
-    width: 37px;
-    height: 37px;
+.client_button {
+    letter-spacing: normal;
     position: relative;
     display: inline-block;
-    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    font-size: 20px;
     color: rgb(255, 255, 255);
-    cursor: pointer;
-    vertical-align: bottom;
     text-align: center;
+    text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 3px rgb(127, 140, 140);
     background-color: rgb(150, 163, 163);
-}
-
-.client_button2 {
-    
 }
 
 .client_button:hover {background-color: rgba(226, 83, 75, 0.95);box-shadow: 0 3px rgb(226, 83, 75);}

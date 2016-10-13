@@ -8,22 +8,25 @@ footer {
   padding-right: 165px;
 }
 
-.footer_image {
+#footer-inner-top {
+
+}
+
+.footer-border {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/footer_border.png");
-  background-position: center center;
   width: 1500px;
   height: 19px;
 }
-
-.first_block {
+/* left-container begin */
+.footer-left-container {
   position: relative;
-  display: table-cell;
+  top:10px;
+  display: inline-block;
 }
 
-.footer_span {
+.footer-left-span {
   position: relative;
   top: 50px;
   display: block;
@@ -34,103 +37,102 @@ footer {
   text-align: left;
 }
 
-table.footer_table {
-    position: relative;
-    top: 70px;
-    width: 250px; /* Ширина таблицы */
-    color: white; /* Цвет текста */
-    border-spacing: 1px; /* Расстояние между ячейками */
+table.footer-left-table {
+  position: relative;
+  top: 70px;
+  width: 250px; /* Ширина таблицы */
+  color: white; /* Цвет текста */
+  border-spacing: 1px; /* Расстояние между ячейками */
 }
 
-table.footer_table td {
-    font-weight: normal;
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    font-style: normal;
-    text-align: left;
-}
-
-table.footer_table th {
-  font-size: 20px;
-  font-weight: bold;
+table.footer-left-table td {
+  font-weight: normal;
+  font-size: 13px;
   color: rgb(255, 255, 255);
-  font-style: italic;
+  font-style: normal;
+  text-align: left;
+}
+
+table.footer-left-table th {
+  font-size: 20px;
+  font-family: OpenSans-SemiboldItalic, sans-serif;
+  color: rgb(255, 255, 255);
   text-align: left;
   vertical-align: center;
 }
+/* left-container end */
 
-.second_block {
+/* middle-container begin */
+.footer-middle-container {
   position: relative;
-  display: table-cell;
+  left: 30px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.com, .com2 {
+.footer-list-container {
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  vertical-align: top;
+}
+
+.footer-list-header {
+  display: table-caption;
   position: relative;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.502);
+  font-family: OpenSans-Bold, sans-serif;
   font-weight: bold;
   text-align: left;
 }
 
-.com2 {
-  left: 100px;
-}
-
-.com_container {
-  display: inline-block;
+.footer-list-container ul{
   position: relative;
-  left: 30px;
-  top: 25px;
-}
-
-.com_container ul{
-  position: relative;
-  top: 25px;
   left: 25px;
+  top: 30px;
+}
+.footer-list-container:last-child {
+  margin-left: 100px;                /* margin between lists */
 }
 
-.com_container li{
-  font-size: 15px;
-  color: white;
-  list-style: none;
-}
-
-.a_footer {
+.footer-list-link {
   font-size: 13px;
   color: rgb(255, 255, 255);
   line-height: 1.8;
   text-align: left;
   text-decoration: none;
 }
+/* middle-container end */
 
-.third_block {
+/* right-container begin */
+.footer-right-container {
   position: absolute;
   right: 150px;
-  top: 50px;
-  display: table-cell; 
+  top: 45px;
+  display: inline-block;
 }
 
-.third_p {
+.footer-right-header {
   position: relative;
   left: 18px;
+  font-size: 20px;
   color: white;
 }
 
-br {
-  font-size: 55px;
-}
-
 i, b {
-  font-size: 20px;
+  font-size: inherit;
 }
 
-table.footer_table2 {
-    width: 350px; /* Ширина таблицы */
-    color: white; /* Цвет текста */
-    border-spacing: 15px; /* Расстояние между ячейками */
+table.footer-right-table {
+  position: relative;
+  top: 15px;
+  width: 350px;
+  color: rgb(255, 255, 255);
+  border-spacing: 15px;
    }
 
-table.footer_table2 td {
+table.footer-right-table td {
   width: 70px;
   height: 70px;
   border-radius: 5px;
@@ -138,20 +140,25 @@ table.footer_table2 td {
   opacity: 0.2;
 }
 
-table.footer_table2 th {
+table.footer-right-table th {
   font-size: 13px;
-  color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: left;
   vertical-align: top;
 }
 
-ul {
-  display: table-cell;
-  position: relative;
+.footer-right-date {
+  font-size: inherit;
+  color: rgba(0, 0, 0, 0.502);
+  line-height: 1.7;
+  text-align: left;
 }
+/* right-container end */
 
-.footer_bottom {
+/*-----------------------------------------------------------------------------------*/
+// Bottom footer part
+
+.footer-inner-bottom {
   padding-left: 165px;
   padding-right: 165px;
   height: 50px;
@@ -162,7 +169,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.102);
 }
 
-.foo_modus {
+.footer-bottom-sitename {
   font-size: 12px;
   color: rgb(255, 255, 255);
   position: absolute;
@@ -170,37 +177,25 @@ ul {
   top: 20px;
 }
 
-.facebook {
-  display: inline-block;
-  background-image: url("../images/facebook.png");
-  width: 10px;
-  height: 22px;
-}
-
-.googleplus {
-  display: inline-block;
-  background-image: url("../images/googleplus.png");
-  width: 22px;
-  height: 23px;
-}
-
-.tweeter {
-  display: inline-block;
-  background-image: url("../images/twetter.png");
-  width: 17px;
-  height: 22px;
-}
-
-.rss {
-  display: inline-block;
-  background-image: url("../images/rss.png");
-  width: 22px;
-  height: 21px;
-}
-
 .social_icons {
-  letter-spacing: 25px;
+  margin-right: 20px;
   position: absolute;
   right: 165px;
   top: 12px;
 }
+
+.icon1 {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+}
+
+.icon1:last-child {
+  margin: 0;
+}
+
+.icon1 a {
+  color: rgb(255, 255, 255);
+}
+
