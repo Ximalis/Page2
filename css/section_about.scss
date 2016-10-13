@@ -3,7 +3,7 @@
 .section_about {
     position: relative;
     margin: 0 auto;
-    height: 800px;
+    height: 870px;
     width: 1500px - ($padding-left-right*2);
     padding-left: $padding-left-right;
     padding-right: $padding-left-right;
@@ -39,31 +39,46 @@
 
 .about-container {
     position: relative;
-    top: 120px;
+    top: 150px;
+    width: 100%;
 }
 
-.why {
+.left-container {
+  display: table-cell;
+}
+
+.left-header, .right-header {
   font-size: 16px;
   color: rgb(127, 140, 140);
-  font-weight: bold;
+  font-family: "OpenSans-ExtraBold", sans-serif;
   text-align: left;
 }
 
-.why_list {
-    display: table-cell;
+.left-list {
+  position: relative;
+  top: 20px;
+  list-style-type: none;
+  padding: 4px;
 }
 
-.cura_skills {
-    width: 600px;
+ul.left-list li {
+  font-size: 13px;
+  color: rgb(119, 119, 119);
+  line-height: 2;
+  text-align: left;
+}
+
+.center-container {
+    width: 550px;
     height: 200px;
     display: table-cell;
     position: relative;
-    left: 100px;
+    left: 90px;
 }
 
-.cura {
+.center-caption {
     display: block;
-    width: 520px;
+    width: 535px;
     position: relative;
     font-size: 13px;
     color: rgb(119, 119, 119);
@@ -83,10 +98,10 @@ ul.about_ul li {
   line-height: 2;
   text-align: left;
 }
-
+/*
 .half_round {
     content: "";
-    position: absolute;
+
     top: 0;
     width: 86px;
     height: 40px;
@@ -96,11 +111,21 @@ ul.about_ul li {
     -moz-border-radius: 87px 25px 0 0px;
          border-radius: 87px 87px 0 0px;
 }
+*/
 
+.halfround-image {
+  position: absolute;
+  width: 120px;
+  height: 58px;
+
+}
 .skills_container {
     position: relative;
+    top: 0;
     display: table;
-    width: 600px;
+    width: 560px;
+    height: 150px;
+  vertical-align: top;
 }
 
 .skills {
@@ -114,20 +139,21 @@ ul.about_ul li {
 
 .about_num {
     position: relative;
-    top: 30px;
+    top: 25px;
     text-align: center;
-    font-weight: bold;
+    font-family: "OpenSans-ExtraBold", sans-serif;
     font-size: 30px;
     color: rgb(127, 140, 140);
 }
 
 .skills_span {
+  position: relative;
+  top: 30px;
+  font-family: "OpenSans-ExtraBold", sans-serif;
   font-size: 16px;
   color: rgb(127, 140, 140);
   text-align: center;
-  position: relative;
-  top: 40px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .clients_say {
@@ -162,9 +188,10 @@ ul.about_ul li {
 }
 
 .clients_span {
+  font-family: OpenSans-Italic, sans-serif;
   font-size: 13px;
   color: rgb(119, 119, 119);
-  font-style: italic;
+
   line-height: 1.9;
   text-align: left;
 }

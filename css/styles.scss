@@ -11,4 +11,8 @@
 
 body {
   font-family: "OpenSans-Regular";
+  a {
+    font-size: inherit;
+    color: red;
+  }
 }
