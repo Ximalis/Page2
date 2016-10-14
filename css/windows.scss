@@ -4,8 +4,8 @@ $win-width: 570px;
 .windows {
   position: relative;
   top: 100px;
-  display: block;
-  height: $win-height;
+  display: table;
+  //height: $win-height;
   margin: 0 auto;
 }
 
@@ -19,8 +19,9 @@ $win-width: 570px;
 }
 
 .window {
-  position: absolute;
-  left: 300px;
+  //position: absolute;
+  margin: 0 auto;
+  text-align: center;
   z-index: 1;
 }
 
@@ -28,16 +29,15 @@ $win-width: 570px;
   background-color: rgb(174, 185, 187);
   height: $win-height - 100px;
   width: $win-width - 200px;
-  position: absolute;
   top: 60px;
 }
 
 .window-min {
-  left:0;
+  margin-right: -100px;
 }
 
 .window-min2 {
-  right:0;
+  margin-left: -100px;
 }
 
 $win-img-height: $win-height - 50px;

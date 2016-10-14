@@ -9,10 +9,15 @@
 @import "section_clients.scss";
 @import "footer.scss";
 
+$padding-left-right: 160px;
+
+
 body {
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-Regular", sans-serif;
+
   a {
     font-size: inherit;
     color: red;
   }
+
 }

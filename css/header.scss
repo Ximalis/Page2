@@ -1,4 +1,3 @@
-@import "variables";
 @import "menu";
 
 header {
@@ -11,7 +10,6 @@ header {
     padding-right: $padding-left-right;
 }
 
-/*Bottom header image styles*/
 #header-border{
     position: absolute;
     left: 0;

@@ -1,32 +1,99 @@
 @import "variables";
 
-ul.hr {
+/* Navigation */
+#nav{
   position: absolute;
-  right: $padding-left-right - 15px;
-  letter-spacing: 22px;
-  font-family: OpenSans-Semibold;
-}
-
-ul.hr li {
-  display: inline;
-}
-
-ul.hr a {
-  border-radius: 5px;
-  padding: 10px 15px 7px;
+  right: 10%;
+  top: 30%;
+  font-family: OpenSans-Semibold, sans-serif;
+  font-size: 13px;
   letter-spacing: normal;
-  text-transform: uppercase;
+  margin: 0 auto;
+  float: left;
+  list-style: none;
+  text-decoration: none;
+}
+
+#nav li{
+  float: left;
+  position: relative;
+  display: block;
+  text-decoration: inherit;
+}
+
+#nav li a{
+  display:block;
+  padding: 10px 15px 7px;
   font-size: 13px;
   color: rgb(255, 255, 255);
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
+  text-decoration: inherit;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
-ul.hr a:hover {background-color: rgb(248, 95, 92);
-  box-shadow: 0 3px rgb(242, 77, 78);}
+#nav li a:hover{
+  color:#fff;
+  background-color: rgb(248, 95, 92);
+  box-shadow: 0 3px rgb(242, 77, 78);
+  text-decoration: inherit;
+}
 
-ul.hr a:active {
-  transform: translateY(4px);
+/* Drop-down links */
+#nav ul{
+  z-index: 1;
+  font-family: OpenSans-Semibold;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 0;
+  font-size: 13px;
+  list-style:none;
+  position:absolute;
+  margin-top: 15px;
+  /*left:-9999px;                            /* Behing the screen */
+  opacity:0;                                 /* Initial opacity state */
+  -webkit-transition: 0.25s linear opacity;  /* В Webkit выпадающие пункты будут проявляться */
+  background-color: rgb(242, 77, 78);
+  border-radius: 5px;
+}
+
+#nav ul:before {
+  content:"";
+  position: absolute;
+  right: 79%;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid rgb(242, 77, 78);
+}
+#nav ul li{
+  text-decoration: none;
+  padding-bottom:4px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+  float:none;
+  border-radius: 5px;
+}
+
+#nav ul a{
+  white-space: nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+  display: block;
+}
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+  left:0; /* Приносим его обратно на экран, когда нужно */
+  opacity:1; /* Делаем непрозрачным */
+}
+#nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+  background: rgb(245, 96, 95); /* Выглядит полупрозрачным */
+  text-decoration: none;
+}
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+  text-decoration:none;
+  -webkit-transition:-webkit-transform 0.075s linear;
+}
+#nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+  background: rgb(245, 96, 95);
+  text-decoration: none;
+  -moz-transform:scale(1.05);
+  -webkit-transform:scale(1.05);
 }
