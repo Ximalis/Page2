@@ -6,6 +6,9 @@
     <title>Fourth</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+    </style>
+    <script src="js/slider.js"></script>
 </head>
 
 <body>
@@ -19,11 +22,11 @@
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">SERVICES</a></li>
             <li>
-                <a href="#" title="portfolio"><i class="fa fa-angle-down" aria-hidden="true" style="margin-right: 9px;"></i>PORTFOLIO</a>
+                <a href="#" title="portfolio"><i class="fa fa-angle-down" aria-hidden="true"></i>PORTFOLIO</a>
                 <ul>
-                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="margin-right: 9px;"></i>Portfolio Page 1</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="margin-right: 9px;"></i>Portfolio Page 2</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="margin-right: 9px;"></i>Portfolio Page 3</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Portfolio Page 1</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Portfolio Page 2</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Portfolio Page 3</a></li>
                 </ul>
             </li>
             <li><a href="#">BLOG</a></li>
@@ -33,18 +36,38 @@
         </ul>
         <img src="images/header_border.png" alt="border" id="header-border">
     </header>
-    <div class="wrapper">
-        <div class="section_home">
-                <h2 class="big-span">vestibulum</h2>
-                <p class="little-span">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut cpmmodo.</p>
-                <a href="#" class="prev_button">«</a>
-                <a href="#" class="next_button">»</a>
+    <div class="wrapper"> <!--main-->
+        <div class="section_home"> <!--outer-->
+            <div class="slider-container">
+                <div class="item" style="background-image: url('images/BvS/1.jpg');">
+                    <h2 class="big-span">vestibulum</h2>
+                    <p class="little-span">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut cpmmodo.</p>
+                </div>
+                <div class="item" style="background-image: url('images/BvS/2.jpg');">
+                    <h2 class="big-span">vestibulum</h2>
+                    <p class="little-span">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut cpmmodo.</p>
+                </div>
+                <div class="item" style="background-image: url('images/BvS/3.jpg');">
+                    <h2 class="big-span">vestibulum</h2>
+                    <p class="little-span">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut cpmmodo.</p>
+                </div>
+                <div class="item" style="background-image: url('images/BvS/4.jpg');">
+                    <h2 class="big-span">vestibulum</h2>
+                    <p class="little-span">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut cpmmodo.</p>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a class="prev_button" data-btn="left">«</a>
+                <a class="next_button" data-btn="right">»</a>
+            </div>
         </div>
+
         <div class="section_intro">
             <div class="slider-trigger-container">
-                <a href="#" class="slider-trigger"></a>
-                <a href="#" class="slider-trigger"></a>
-                <a href="#" class="slider-trigger"></a>
+                <a class="slider-trigger slider-trigger-active" data-point="1"></a>
+                <a class="slider-trigger" data-point="2"></a>
+                <a class="slider-trigger" data-point="3"></a>
+                <a class="slider-trigger" data-point="4"></a>
             </div>
             <div class="section_inner_intro">
                 <h2 class="intro_h">Some of our top services</h2>
@@ -52,6 +75,7 @@
                 <a href="#" class="intro_button">view more</a>
             </div>
         </div>
+
         <div class="section_services">
             <div class="qwerty">
 
@@ -262,5 +286,7 @@
         </div>
     </footer>
 </body>
-
+<script>
+    new Slider(".slider-trigger-container", ".slider-container", ".nav-buttons")
+</script>
 </html>

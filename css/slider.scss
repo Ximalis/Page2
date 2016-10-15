@@ -1,0 +1,33 @@
+.slider-container .item {
+  float: left !important;
+  width: 1500px;
+  height: 500px;
+  background-image: url('images/BvS/1.jpg');
+  background-size: cover
+}
+
+.section_home {
+  overflow: hidden !important;
+}
+
+.slider-trigger-active {
+  background-color: red !important;
+}
+
+.slider-container {
+  transition: 1s !important;
+}
+
+.fa-angle-right {
+  margin-right: 9px;
+}
+
+.fa-angle-down {
+  margin-right: 9px;
+}
+
+.slider-container {
+  position: relative;
+  width: 6000px;
+  height: 500px;
+}
