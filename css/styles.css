@@ -97,10 +97,15 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
 
+/*#nav li:first-child {
+  background-color: darken($general-style, 20%);
+  box-shadow: 0 3px darken($general-style, 25%);
+  border-radius: 5px;
+}*/
 #nav li a:hover {
   color: #fff;
   background-color: #e5655d;
-  box-shadow: 0 3px #64c0b8;
+  box-shadow: 0 3px #e15047;
   text-decoration: inherit; }
 
 /* Drop-down links */
@@ -126,8 +131,8 @@
 #nav ul:before {
   content: "";
   position: absolute;
-  right: 79%;
-  top: -8px;
+  right: 82%;
+  top: -7px;
   width: 0;
   height: 0;
   border-right: 8px solid transparent;
@@ -142,6 +147,9 @@
   /* margin between lis items*/
   float: none;
   border-radius: 5px; }
+
+#nav ul li:hover {
+  background-color: transparent; }
 
 #nav ul a {
   white-space: nowrap;
@@ -167,8 +175,68 @@
 #nav li:hover ul li a:hover {
   /* ╨г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨┤╨╗╤П ╨▓╤Л╨┐╨░╨┤╨░╤О╤Й╨╕╤Е ╨┐╤Г╨╜╨║╤В╨╛╨▓, ╨║╨╛╨│╨┤╨░ ╨║╤Г╤А╤Б╨╛╤А ╨╜╨░╨▓╨╛╨┤╨╕╤В╤Б╤П ╨╜╨░ ╨║╨╛╨╜╨║╤А╨╡╤В╨╜╤Л╨╣ ╨┐╤Г╨╜╨║╤В */
   background: #76c7c0;
+  box-shadow: 0 3px #64c0b8;
+  text-decoration: none;
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02); }
+
+#nav li:hover ul li a:active {
+  /* ╨г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨┤╨╗╤П ╨▓╤Л╨┐╨░╨┤╨░╤О╤Й╨╕╤Е ╨┐╤Г╨╜╨║╤В╨╛╨▓, ╨║╨╛╨│╨┤╨░ ╨║╤Г╤А╤Б╨╛╤А ╨╜╨░╨▓╨╛╨┤╨╕╤В╤Б╤П ╨╜╨░ ╨║╨╛╨╜╨║╤А╨╡╤В╨╜╤Л╨╣ ╨┐╤Г╨╜╨║╤В */
+  background: #64c0b8;
+  transform: translateY(3px);
   text-decoration: none; }
 
+/*.qwerty {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+form {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+.search {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  width: 160px;
+
+  border: 1px solid #000;
+  min-height: 20px;
+  max-height: 20px;
+}
+input[type="search"] {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 160px;
+  vertical-align: middle;
+  margin: 0;
+  background-color: white;
+}*/
 header {
   position: relative;
   background-color: #76c7c0;

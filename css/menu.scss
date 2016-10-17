@@ -31,10 +31,15 @@
   -webkit-border-radius: 5px;
 }
 
+/*#nav li:first-child {
+  background-color: darken($general-style, 20%);
+  box-shadow: 0 3px darken($general-style, 25%);
+  border-radius: 5px;
+}*/
 #nav li a:hover{
   color:#fff;
   background-color: $button-background;
-  box-shadow: 0 3px darken($general-style, 5%);
+  box-shadow: 0 3px darken($button-background, 5%);
   text-decoration: inherit;
 }
 
@@ -57,11 +62,14 @@
   border-radius: 5px;
 }
 
+#nav ul:last-child{
+
+}
 #nav ul:before {
   content:"";
   position: absolute;
-  right: 79%;
-  top: -8px;
+  right: 82%;
+  top: -7px;
   width: 0;
   height: 0;
   border-right: 8px solid transparent;
@@ -77,7 +85,9 @@
   float:none;
   border-radius: 5px;
 }
-
+#nav ul li:hover {
+  background-color: transparent;
+}
 #nav ul a{
   white-space: nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
   display: block;
@@ -96,7 +106,66 @@
 }
 #nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
   background: $general-style;
+  box-shadow: 0 3px darken($general-style, 5%);
   text-decoration: none;
-  //-moz-transform:scale(1.05);
-  //-webkit-transform:scale(1.05);
+  -moz-transform:scale(1.02);
+  -webkit-transform:scale(1.02);
 }
+
+#nav li:hover ul li a:active{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+  background: darken($general-style, 5%);
+  transform: translateY(3px);
+  //box-shadow: none;
+  text-decoration: none;
+}
+/*.qwerty {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+form {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+.search {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  width: 160px;
+
+  border: 1px solid #000;
+  min-height: 20px;
+  max-height: 20px;
+}
+input[type="search"] {
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 160px;
+  vertical-align: middle;
+  margin: 0;
+  background-color: white;
+}*/
