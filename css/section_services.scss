@@ -1,3 +1,4 @@
+@import "variables";
 .section_services {
     position: relative;
     text-align: center;
@@ -23,7 +24,8 @@
     position: relative;
     top: 40px;
     font-size: 60px;
-    color: rgb(64, 190, 180);
+    color: $general-style;
+
 }
 
 .serv-icon:hover {
@@ -73,11 +75,11 @@
     outline: none;
     border: none;
     border-radius: 5px;
-    background-color: rgb(93, 200, 191);
-    box-shadow: 0 3px rgb(66, 186, 175);
+    background-color: $general-style;
+    box-shadow: 0 3px darken($general-style, 5%);
 }
 
-.readmore_button:hover {background-color: rgba(226, 83, 75, 0.95);box-shadow: 0 3px rgb(242, 77, 78);}
+.readmore_button:hover {background-color: $button-background;box-shadow: 0 3px darken($button-background, 5%);}
 
 .readmore_button:active {
     background-color: rgb(226, 83, 75);

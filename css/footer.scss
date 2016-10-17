@@ -1,15 +1,29 @@
+@import "variables";
 footer {
-  background-color: rgb(118, 199, 192);
+  background-color: $general-style;
   position: relative;
   margin: 0 auto;
   width: 1170px;
   height: 350px;
-  padding-left: 165px;
-  padding-right: 165px;
+  padding-left: $padding-left-right + 5px;
+  padding-right: $padding-left-right + 5px;
 }
 
 #footer-inner-top {
 
+}
+
+.footer-middle-container .fa-angle-right {
+  margin-right: 8px;
+}
+
+.footer-right-header i{
+  font-family: OpenSans-Italic, sans-serif;
+}
+
+.footer-right-header b{
+  font-family: OpenSans-Bold, sans-serif;
+  text-transform: uppercase;
 }
 
 .footer-border {

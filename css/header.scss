@@ -2,8 +2,8 @@
 
 header {
     position: relative;
-    background-color: rgb(118, 199, 192);
-    width: 1180px;
+    background-color: $general-style;
+    width: $section-width - ($padding-left-right*2);
     height: 80px;
     margin: 0 auto;
     padding-left: $padding-left-right;
@@ -15,5 +15,5 @@ header {
     left: 0;
     bottom: 0;
     height: 9px;
-    width: 1500px;
+    width: $section-width;
 }

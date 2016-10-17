@@ -1,9 +1,10 @@
+@import "variables";
 $inner-intro-left-padding: 30px;
 $inner-intro-top-padding: 15px;
 
 .section_intro {
     background-color: rgb(243, 243, 243);
-    width: 1500px;
+    width: $section-width;
     height: 200px;
     margin: 0 auto;
 }
@@ -16,19 +17,34 @@ $inner-intro-top-padding: 15px;
     padding-top: 25px;
     border-radius: 5px;
     background-color: rgb(236, 236, 236);
-    width: 1170px - $inner-intro-left-padding;
+    width: $section-width - ($padding-left-right*2) - $inner-intro-left-padding;
     height: 100px - $inner-intro-top-padding;
 }
 
-.intro_button:hover {background-color: rgba(226, 83, 75, 0.95);}
+.intro-button {
+    position: absolute;
+    right: 3%;
+    top: 29%;
+    text-transform: uppercase;
+    font-family: OpenSans-Semibold, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: $button-background;
+    box-shadow: 0 3px darken($button-background, 6%);;
+}
 
-.intro_button:active {
+.intro-button:hover {opacity: 0.95;}
+
+.intro-button:active {
     background-color: rgb(226, 83, 75);
-    box-shadow: 0 2px #666;
     transform: translateY(3px);
 }
 
-.intro_h {
+.intro-big-header {
     position: relative;
     vertical-align: middle;
     font-family: "OpenSans-Semibold", serif;
@@ -36,7 +52,7 @@ $inner-intro-top-padding: 15px;
     color: rgb(127, 140, 140);
 }
 
-.intro_text {
+.intro-text {
     position: relative;
     vertical-align: middle;
     font-size: 13px;
@@ -57,33 +73,12 @@ $inner-intro-top-padding: 15px;
     background-color: rgb(176, 184, 185);
     width: 60px;
     height: 5px;
-}
-
-.slider-trigger:hover {
-    background-color: rgb(242, 77, 78);
+    cursor: pointer;
 }
 
 .slider-trigger:active {
-    background-color: rgb(242, 77, 78);
+    background-color: $button-background;
 }
 
-.intro_button {
-    position: absolute;
-    right: 30px;
-    top: 28px;
-    text-transform: uppercase;
-    font-family: OpenSans-Semibold, sans-serif;
-    font-size: 20px;
-    line-height: 1.2;
-    color: rgb(255, 255, 255);
-    padding: 10px 30px 10px 30px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 3px rgb(220, 83, 75);
-    background-color: rgb(250, 83, 75);
-}
+
 

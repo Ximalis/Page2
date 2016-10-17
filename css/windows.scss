@@ -26,10 +26,12 @@ $win-width: 570px;
 }
 
 .window-min, .window-min2 {
+  position: relative;
+  display: inline-block;
+  top: 0;
   background-color: rgb(174, 185, 187);
   height: $win-height - 100px;
   width: $win-width - 200px;
-  top: 60px;
 }
 
 .window-min {
@@ -46,10 +48,10 @@ $win-img-width: $win-width - 10px;
 .window-image, .window-image-min {
   position: relative;
   top: 33px;
+  border-radius: 5px;
   height: $win-img-height;
   width: $win-img-width;
   background-color: rgb(122, 141, 141);
-  border-radius: 5px;
   margin: 0 auto;
 }
 
@@ -84,4 +86,12 @@ $win-img-width: $win-width - 10px;
   width: 12px;
   border-radius: 10px;
   background-color: rgb(237, 237, 237);
+}
+
+.win-img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

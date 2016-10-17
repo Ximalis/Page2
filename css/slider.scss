@@ -1,8 +1,8 @@
+@import "variables";
 .slider-container .item {
   float: left !important;
   width: 1500px;
   height: 500px;
-  background-image: url('images/BvS/1.jpg');
   background-size: cover
 }
 
@@ -11,7 +11,7 @@
 }
 
 .slider-trigger-active {
-  background-color: red !important;
+  background-color: $button-background !important;
 }
 
 .slider-container {
