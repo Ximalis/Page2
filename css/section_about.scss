@@ -1,10 +1,10 @@
 @import "variables";
 @import "windows.scss";
-.section_about {
+.section-about {
     position: relative;
     margin: 0 auto;
     height: 870px;
-    width: 1500px - ($padding-left-right*2);
+    width: $section-width - ($padding-left-right*2);
     padding-left: $padding-left-right;
     padding-right: $padding-left-right;
     background-color: rgb(236, 236, 236);
@@ -15,15 +15,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 19px;
-    width: 1500px;
+    width: $section-width;
 }
 
 .top-bigHeader {
     position: relative;
     top: 40px;
     font-size: 40px;
-    color: rgb(225, 82, 75);
+    color: $button-background;
     text-align: center;
     text-transform: uppercase;
 }
@@ -43,6 +42,7 @@
     width: 100%;
 }
 
+// left container begin
 .left-container {
   display: table-cell;
 }
@@ -68,6 +68,7 @@ ul.left-list li {
   text-align: left;
 }
 
+//center-container-begin
 .center-container {
     width: 550px;
     height: 200px;
@@ -85,41 +86,26 @@ ul.left-list li {
     line-height: 1.9;
 }
 
-.about_ul {
+.about-ul {
     position: relative;
     top: 40px;
     list-style-type: none;
     padding: 4px;
 }
 
-ul.about_ul li {
+ul.about-ul li {
   font-size: 13px;
   color: rgb(119, 119, 119);
   line-height: 2;
   text-align: left;
 }
-/*
-.half_round {
-    content: "";
-
-    top: 0;
-    width: 86px;
-    height: 40px;
-    border-top: 18px solid green;
-    border-left: 18px solid blue;
-    border-right: 18px solid red;
-    -moz-border-radius: 87px 25px 0 0px;
-         border-radius: 87px 87px 0 0px;
-}
-*/
 
 .halfround-image {
   position: absolute;
   width: 120px;
-  height: 58px;
 
 }
-.skills_container {
+.skills-container {
     position: relative;
     top: 0;
     display: table;
@@ -137,7 +123,7 @@ ul.about_ul li {
     height: 100px;
 }
 
-.about_num {
+.about-num {
     position: relative;
     top: 25px;
     text-align: center;
@@ -146,7 +132,7 @@ ul.about_ul li {
     color: rgb(127, 140, 140);
 }
 
-.skills_span {
+.skills-span {
   position: relative;
   top: 30px;
   font-family: "OpenSans-ExtraBold", sans-serif;
@@ -156,26 +142,25 @@ ul.about_ul li {
   text-transform: uppercase;
 }
 
-.clients_say {
+.right-container {
     display: table-cell;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.clients_text {
+.right-container-text {
    width: 240px;
    background-color: rgb(248, 248, 248);
    position: relative;
    top: 25px;
-   //left: 20px;
    -moz-border-radius: 10px; 
    -webkit-border-radius: 10px; 
    border-radius: 10px;
    text-align: left;
    padding: 15px;
 }
-.clients_text:after {
+.right-container-text:after {
    content:"";
    position: absolute;
    left: 20px;
@@ -184,28 +169,29 @@ ul.about_ul li {
    height: 0;
    border-top: 35px solid rgb(248, 248, 248);
    border-left: 35px solid transparent;
-   //margin: 80px 0 0 20px;
 }
 
-.clients_span {
+.right-container-span {
   font-family: OpenSans-Italic, sans-serif;
   font-size: 13px;
   color: rgb(119, 119, 119);
-
   line-height: 1.9;
   text-align: left;
 }
 
-.clients_name {
+.right-container-caption {
     position: relative;
-    top: 35px;
+    top: 45px;
     left: 65px;
     font-size: 16px;
     color: rgb(119, 119, 119);
-    line-height: 1.9;
     text-align: left;
 }
 
 .fa-arrow-right {
-  color: rgb(229, 101, 93);
+  color: $button-background;
+}
+
+.a-style {
+  color: $button-background;
 }

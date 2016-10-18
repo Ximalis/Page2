@@ -23,23 +23,26 @@ $win-width: 570px;
   margin: 0 auto;
   text-align: center;
   z-index: 1;
+  box-shadow:
+    62px 0 0 -50px  rgba(0, 0, 0, 0.15),
+    -62px 0 0 -50px rgba(0, 0, 0, 0.15);
 }
 
 .window-min, .window-min2 {
   position: relative;
   display: inline-block;
-  top: 0;
+  top: -50px;
   background-color: rgb(174, 185, 187);
   height: $win-height - 100px;
   width: $win-width - 200px;
 }
 
 .window-min {
-  margin-right: -100px;
+  margin-right: -65px;
 }
 
 .window-min2 {
-  margin-left: -100px;
+  margin-left: -65px;
 }
 
 $win-img-height: $win-height - 50px;

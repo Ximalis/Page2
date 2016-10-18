@@ -1,5 +1,9 @@
 @import "variables";
 
+#home-button { /* personal style for home button */
+  background-color: darken($general-style, 20%);
+  box-shadow: 0 3px darken($general-style, 25%);
+}
 /* Navigation */
 #nav{
   position: absolute;
@@ -31,11 +35,6 @@
   -webkit-border-radius: 5px;
 }
 
-/*#nav li:first-child {
-  background-color: darken($general-style, 20%);
-  box-shadow: 0 3px darken($general-style, 25%);
-  border-radius: 5px;
-}*/
 #nav li a:hover{
   color:#fff;
   background-color: $button-background;
@@ -46,7 +45,7 @@
 /* Drop-down links */
 #nav ul{
   z-index: 1;
-  font-family: OpenSans-Semibold;
+  font-family: OpenSans-Semibold, sans-serif;
   padding-top: 0px;
   padding-left: 4px;
   padding-right: 4px;
@@ -57,14 +56,11 @@
   margin-top: 15px;
   /*left:-9999px;                            /* Behing the screen */
   opacity:0;                                 /* Initial opacity state */
-  -webkit-transition: 0.25s linear opacity;  /* В Webkit выпадающие пункты будут проявляться */
+  -webkit-transition: 0.25s linear opacity;
   background-color: darken($button-background, 5%);
   border-radius: 5px;
 }
 
-#nav ul:last-child{
-
-}
 #nav ul:before {
   content:"";
   position: absolute;
@@ -81,7 +77,7 @@
   margin-top: 4px;
   background-color: $button-background;
   text-decoration: none;
-  padding-bottom:4px; /* margin between lis items*/
+  padding-bottom:4px; /* margin between list items*/
   float:none;
   border-radius: 5px;
 }
@@ -89,22 +85,19 @@
   background-color: transparent;
 }
 #nav ul a{
-  white-space: nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+  white-space: nowrap; // delete line break
   display: block;
 }
-#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
-  left:0; /* Приносим его обратно на экран, когда нужно */
-  opacity:1; /* Делаем непрозрачным */
+#nav li:hover ul{       /* Output the drop-down item */
+  //left:0;               /* back in the screen */
+  opacity:1;            //delete opacity
 }
-#nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
- // background: $button-background; /* Выглядит полупрозрачным */
-  text-decoration: none;
-}
-#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+
+#nav li:hover ul a{
   text-decoration:none;
   -webkit-transition:-webkit-transform 0.075s linear;
 }
-#nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+#nav li:hover ul li a:hover{ //style for item on hover
   background: $general-style;
   box-shadow: 0 3px darken($general-style, 5%);
   text-decoration: none;
@@ -112,60 +105,8 @@
   -webkit-transform:scale(1.02);
 }
 
-#nav li:hover ul li a:active{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+#nav li:hover ul li a:active{
   background: darken($general-style, 5%);
   transform: translateY(3px);
-  //box-shadow: none;
   text-decoration: none;
 }
-/*.qwerty {
-  border: none;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-form {
-  border: none;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  text-decoration: none;
-  border: none;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  text-decoration: none;
-}
-.search {
-  border: none;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  text-decoration: none;
-  width: 160px;
-
-  border: 1px solid #000;
-  min-height: 20px;
-  max-height: 20px;
-}
-input[type="search"] {
-  border: none;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  width: 160px;
-  vertical-align: middle;
-  margin: 0;
-  background-color: white;
-}*/

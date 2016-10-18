@@ -1,12 +1,18 @@
 @import "variables";
+
 .slider-container .item {
   float: left !important;
-  width: 1500px;
+  width: $section-width;
   height: 500px;
-  background-size: cover
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.section_home {
+.slider-container {
+  width: $section-width*3;
+}
+
+.section-home {
   overflow: hidden !important;
 }
 
@@ -26,8 +32,3 @@
   margin-right: 9px;
 }
 
-.slider-container {
-  position: relative;
-  width: 6000px;
-  height: 500px;
-}

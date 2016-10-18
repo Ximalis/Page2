@@ -3,14 +3,10 @@ footer {
   background-color: $general-style;
   position: relative;
   margin: 0 auto;
-  width: 1170px;
+  width: $section-width - ($padding-left-right*2);
   height: 350px;
-  padding-left: $padding-left-right + 5px;
-  padding-right: $padding-left-right + 5px;
-}
-
-#footer-inner-top {
-
+  padding-left: $padding-left-right;
+  padding-right: $padding-left-right;
 }
 
 .footer-middle-container .fa-angle-right {
@@ -30,9 +26,10 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1500px;
-  height: 19px;
+  right: 0;
+  width: $section-width;
 }
+
 /* left-container begin */
 .footer-left-container {
   position: relative;
@@ -54,9 +51,9 @@ footer {
 table.footer-left-table {
   position: relative;
   top: 70px;
-  width: 250px; /* Ширина таблицы */
-  color: white; /* Цвет текста */
-  border-spacing: 1px; /* Расстояние между ячейками */
+  width: 250px;
+  color: white;
+  border-spacing: 1px;
 }
 
 table.footer-left-table td {
@@ -79,7 +76,7 @@ table.footer-left-table th {
 /* middle-container begin */
 .footer-middle-container {
   position: relative;
-  left: 30px;
+  left: 5%;
   display: inline-block;
   vertical-align: top;
 }
@@ -134,7 +131,7 @@ table.footer-left-table th {
   color: white;
 }
 
-i, b {
+footer i, b {
   font-size: inherit;
 }
 
@@ -147,6 +144,7 @@ table.footer-right-table {
    }
 
 table.footer-right-table td {
+  display: block;
   width: 70px;
   height: 70px;
   border-radius: 5px;
@@ -155,9 +153,11 @@ table.footer-right-table td {
 }
 
 table.footer-right-table th {
+  width: 340px;
+  white-space: nowrap;
   font-size: 13px;
   line-height: 1.5;
-  text-align: left;
+  text-align: inherit;
   vertical-align: top;
 }
 
@@ -173,10 +173,10 @@ table.footer-right-table th {
 // Bottom footer part
 
 .footer-inner-bottom {
-  padding-left: 165px;
-  padding-right: 165px;
+  padding-left: $padding-left-right;
+  padding-right: $padding-left-right;
   height: 50px;
-  width: 1170px;
+  width: $section-width - ($padding-left-right*2);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -191,7 +191,7 @@ table.footer-right-table th {
   top: 20px;
 }
 
-.social_icons {
+.social-icons {
   margin-right: 20px;
   position: absolute;
   right: 165px;

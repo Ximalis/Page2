@@ -1,11 +1,12 @@
-.section_clients {
+@import "variables";
+.section-clients {
     position: relative;
     height: 225px;
-    width: 1180px;
+    width: $section-width - ($padding-left-right * 2);
     background-color: rgb(236, 236, 236);
     margin: 0 auto;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: $padding-left-right;
+    padding-right: $padding-left-right;
 }
 
 .left-header2 {
@@ -22,6 +23,7 @@
     position: relative;
     top: 9px;
     left: 15px;
+    width: 76%;
     display: inline-block;
 }
 
@@ -47,11 +49,11 @@
     background-color: rgb(225, 226, 226);
     position: absolute;
     top: 3px;
-    width: 880px;
+    width: 100%;
     height: 1px;
 }
 
-.jquery_rectangle {
+.jquery-rectangle {
     position: relative;
     display: inline-block;
     border-radius: 5px;
@@ -60,7 +62,14 @@
     height: 90px;
 }
 
-.clients_jquery {
+.jquery-image {
+    display: block;
+    position: relative;
+    top: 38%;
+    margin: 0 auto;
+}
+
+.clients-jquery {
     position: relative;
     top: 65px;
     text-align: justify;
@@ -75,14 +84,10 @@
     letter-spacing: 19px;
 }
 
-.client_button {
+.client-button {
     letter-spacing: normal;
     position: relative;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 15px;
-    padding-top: 7px;
-    padding-bottom: 4px;
     font-weight: bold;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -93,10 +98,10 @@
     background-color: rgb(150, 163, 163);
 }
 
-.client_button:hover {background-color: rgba(226, 83, 75, 0.95);box-shadow: 0 3px rgb(226, 83, 75);}
+.client-button-left {padding: 7px 15px 4px 10px;}
 
-.client_button:active {
-    background-color: rgb(226, 83, 75);
-    box-shadow: 0 2px rgb(226, 83, 75);
-    transform: translateY(3px);
-}
+.client-button-right {padding: 7px 10px 4px 15px;}
+
+.client-button:hover {background-color: $button-background; box-shadow: 0 3px darken($button-background, 5%);}
+
+.client-button:active {transform: translateY(3px); background-color: $button-background; box-shadow: 0 3px $button-background;}

@@ -1,26 +1,20 @@
-$font-color: rgb(255, 255, 255);
-
-.site_name, .site_name2 {
+.site-name {
     position: relative;
     display: block;
     top: 25px;
-    width: 200px;
 }
 
-.modus {
+.first-word {
     display: inline;
-    font-family: OpenSans-ExtraBold;
+    font-family: OpenSans-ExtraBold, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
-    color: $font-color;
 }
 
-.versus {
-    font-family: inherit;
-    margin-left: 3px;
+.second-word {
     display: inline;
+    margin-left: 3px;
     vertical-align: bottom;
     font-size: 25px;
-    color: $font-color;
 }

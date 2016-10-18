@@ -13,12 +13,12 @@
 
 <body>
     <header>
-        <div class="site_name">
-            <p class="modus">modus</p>
-            <p class="versus">versus</p>
+        <div class="site-name">
+            <p class="first-word">modus</p>
+            <p class="second-word">versus</p>
         </div>
         <ul id="nav">
-            <li><a href="#">HOME</a></li>
+            <li><a id="home-button" href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">SERVICES</a></li>
             <li>
@@ -32,22 +32,14 @@
             <li><a href="#">BLOG</a></li>
             <li><a href="#">FEATURES</a></li>
             <li><a href="#">CONTACTS</a></li>
-            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                <ul>
-                    <li>
-                        <div class="qwerty">
-                            <form>
-                                <input type="search" size="25" maxlength="30" name="q" placeholder="Поиск по сайту">
-                            </form>
-                        </div>
-                    </li>
-                </ul>
-            </li>
+            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
         <img src="images/header_border.png" alt="border" id="header-border">
     </header>
-    <div class="wrapper"> <!--main-->
-        <div class="section_home"> <!--outer-->
+    <div class="wrapper">
+
+        <!--Section home begin (slider)-->
+        <div class="section-home">
             <div class="slider-container">
                 <div class="item" style="background-image: url('images/BvS/1.jpg');">
                     <h2 class="big-span">vestibulum</h2>
@@ -63,54 +55,55 @@
                 </div>
             </div>
             <div class="nav-buttons">
-                <a class="prev_button" data-btn="left">«</a>
-                <a class="next_button" data-btn="right">»</a>
+                <a class="prev-button" data-btn="left">«</a>
+                <a class="next-button" data-btn="right">»</a>
             </div>
         </div>
 
-        <div class="section_intro">
+        <!--Section intro begin (slider triggers)-->
+        <div class="section-intro">
             <div class="slider-trigger-container">
                 <a class="slider-trigger slider-trigger-active" data-point="1"></a>
                 <a class="slider-trigger" data-point="2"></a>
                 <a class="slider-trigger" data-point="3"></a>
             </div>
-            <div class="section_inner_intro">
+            <div class="section-inner-intro">
                 <h2 class="intro-big-header">Some of our top services</h2>
                 <p class="intro-text">UT eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero ectus mattis orci, ut commodo.</p>
                 <a href="#" class="intro-button">view more</a>
             </div>
         </div>
 
-        <div class="section_services">
-            <div class="qwerty">
-
-            </div>
+        <!--Section services begin (4 blocks)-->
+        <div class="section-services">
             <div class="susp">
-                <div class="serv-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
+                <div class="serv-icon serv-icon-first"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
                 <p class="icon-span">suspendisse</p>
-                <span class="serv_span"> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. </span>
-                <a href="#" class="readmore_button">read more</a>
+                <span class="serv-span"> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. </span>
+                <a href="#" class="readmore-button readmore-button-first">read more</a>
             </div>
             <div class="susp">
                 <div class="serv-icon"><i class="fa fa-key" aria-hidden="true"></i></div>
                 <p class="icon-span">maecenas</p>
-                <span class="serv_span">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</span>
-                <a href="#" class="readmore_button">read more</a>
+                <span class="serv-span">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</span>
+                <a href="#" class="readmore-button">read more</a>
             </div>
             <div class="susp">
                 <div class="serv-icon"><i class="fa fa-flag" aria-hidden="true"></i></div>
                 <p class="icon-span">aliquam</p>
-                <span class="serv_span">Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </span>
-                <a href="#" class="readmore_button">read more</a>
+                <span class="serv-span">Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </span>
+                <a href="#" class="readmore-button">read more</a>
             </div>
             <div class="susp">
                 <div class="serv-icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
                 <p class="icon-span">habitasse</p>
-                <span class="serv_span">Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </span>
-                <a href="#" class="readmore_button">read more</a>
+                <span class="serv-span">Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </span>
+                <a href="#" class="readmore-button">read more</a>
             </div>
         </div>
-        <div class="section_about">
+
+        <!--Section about begin (windows)-->
+        <div class="section-about">
             <img src="images/section-about-border.png" alt="border" class="border2">
             <h2 class="top-bigHeader">why modus versus?</h2>
             <p class="top-littleHeader">Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
@@ -159,72 +152,74 @@
 
                 <div class="center-container">
                     <span class="center-caption">Curabitus quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam
-                        pellentesque lectus <a href="#">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</span>
-                    <div class="skills_container">
+                        pellentesque lectus <a class="a-style" href="#">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</span>
+                    <div class="skills-container">
                         <div class="skills">
                             <img class="halfround-image" src="images/1.png" alt="1">
-                            <div class="half_round"></div>
-                            <p class="about_num">50</p>
-                            <p class="skills_span">suspendisse</p>
+                            <div class="half-round"></div>
+                            <p class="about-num">50</p>
+                            <p class="skills-span">suspendisse</p>
                         </div>
                         <div class="skills">
                             <img class="halfround-image" src="images/2.png" alt="2">
-                            <!--<div class="half_round"></div>-->
-                            <p class="about_num">70</p>
-                            <p class="skills_span">maecenas</p>
+                            <p class="about-num">70</p>
+                            <p class="skills-span">maecenas</p>
                         </div>
                         <div class="skills">
                             <img class="halfround-image" src="images/3.png" alt="3">
-                            <!--<div class="half_round"></div>-->
-                            <p class="about_num">80</p>
-                            <p class="skills_span">aliquam</p>
+                            <p class="about-num">80</p>
+                            <p class="skills-span">aliquam</p>
                         </div>
                         <div class="skills">
                             <img class="halfround-image" src="images/4.png" alt="4">
-                            <!--<div class="half_round"></div>-->
-                            <p class="about_num">100</p>
-                            <p class="skills_span">habitasse</p>
+                            <p class="about-num">100</p>
+                            <p class="skills-span">habitasse</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="clients_say">
+                <div class="right-container">
                     <p class="right-header">What Client's Say ?</p>
-                    <div class="clients_text">
-                        <span class="clients_span">Curabitur quis nils in leo euismod venenatis eu in diam.
+                    <div class="right-container-text">
+                        <span class="right-container-span">Curabitur quis nils in leo euismod venenatis eu in diam.
                             Etiam auctor diam pellentesque lectus vehicula mattis. Nula ac massat at dolor condimentum.</span>
                     </div>
-                    <p class="clients_name">Jhon Doe</p>
+                    <p class="right-container-caption">Jhon Doe</p>
                 </div>
             </div>
         </div>
-        <div class="section_clients">
+
+        <!--Section clients begin-->
+        <div class="section-clients">
             <p class="left-header2">Our Happy Clients</p>
             <div class="line-container">
                 <div class="line-begin"></div>
                 <div class="line"></div>
             </div>
             <div class="button-container">
-                <a href="#" class="client_button"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                <a href="#" class="client_button"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                <a href="#" class="client-button client-button-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                <a href="#" class="client-button client-button-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
             </div>
-            <div class="clients_jquery">
-                <div class="jquery_rectangle"></div>
-                <div class="jquery_rectangle"></div>
-                <div class="jquery_rectangle"></div>
-                <div class="jquery_rectangle"></div>
-                <div class="jquery_rectangle"></div>
-                <div class="jquery_rectangle"></div>
+            <div class="clients-jquery">
+                <div class="jquery-rectangle"><img class="jquery-image" src="images/jquery.png" alt=""></div>
+                <div class="jquery-rectangle"><img class="jquery-image" src="images/jquery.png" alt=""></div>
+                <div class="jquery-rectangle"><img class="jquery-image" src="images/jquery.png" alt=""></div>
+                <div class="jquery-rectangle"><img class="jquery-image" src="images/jquery.png" alt=""></div>
+                <div class="jquery-rectangle"><img class="jquery-image" src="images/jquery.png" alt=""></div>
+                <div class="jquery-rectangle"><img class="jquery-image" src="images/jquery.png" alt=""></div>
+
             </div>
         </div>
     </div>
+
+    <!--Footer begin-->
     <footer>
         <img src="images/footer-border.png" alt="footer-border" class="footer-border">
         <div id="footer-inner-top">
             <div class="footer-left-container">
-                <div class="site_name">
-                    <p class="modus">modus</p>
-                    <p class="versus">versus</p>
+                <div class="site-name">
+                    <p class="first-word">modus</p>
+                    <p class="second-word">versus</p>
                 </div>
                 <span class="footer-left-span">Lorem ipsum dolor sit amet, consecteur adipiccing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</span>
                 <table class="footer-left-table">
@@ -238,7 +233,7 @@
                     </tr>
                 </table>
             </div>
-
+_
             <div class="footer-middle-container">
                 <div class="footer-list-container">
                     <h3 class="footer-list-header">Company</h3>
@@ -270,11 +265,11 @@
                 <table class="footer-right-table">
                     <tr>
                         <td></td>
-                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit <p class="footer-right-date">26 may, 2013</p></th>
+                        <th>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit <p class="footer-right-date">26 may, 2013</p></th>
                     </tr>
                     <tr>
                         <td></td>
-                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit <p class="footer-right-date">26 may, 2013</p></th>
+                        <th>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit <p class="footer-right-date">26 may, 2013</p></th>
                     </tr>
                 </table>
             </div>
@@ -282,7 +277,7 @@
 
         <div class="footer-inner-bottom">
             <p class="footer-bottom-sitename">2016 ModusVersus</p>
-            <ul class="social_icons">
+            <ul class="social-icons">
                 <li class="icon1"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li class="icon1"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                 <li class="icon1"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

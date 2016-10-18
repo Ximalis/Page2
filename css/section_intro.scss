@@ -2,14 +2,14 @@
 $inner-intro-left-padding: 30px;
 $inner-intro-top-padding: 15px;
 
-.section_intro {
+.section-intro {
     background-color: rgb(243, 243, 243);
     width: $section-width;
     height: 200px;
     margin: 0 auto;
 }
 
-.section_inner_intro {
+.section-inner-intro {
     position: relative;
     top: 50px;
     margin: inherit;
@@ -17,7 +17,7 @@ $inner-intro-top-padding: 15px;
     padding-top: 25px;
     border-radius: 5px;
     background-color: rgb(236, 236, 236);
-    width: $section-width - ($padding-left-right*2) - $inner-intro-left-padding;
+    width: $section-width - ($padding-left-right*2);
     height: 100px - $inner-intro-top-padding;
 }
 
@@ -34,7 +34,7 @@ $inner-intro-top-padding: 15px;
     text-decoration: none;
     border-radius: 5px;
     background-color: $button-background;
-    box-shadow: 0 3px darken($button-background, 6%);;
+    box-shadow: 0 3px darken($button-background, 5%);
 }
 
 .intro-button:hover {opacity: 0.95;}
